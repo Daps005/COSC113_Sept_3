@@ -15,27 +15,26 @@ public class Student {
 
     }
 
-//    Student(String FN, String LN){
-//        this.FN = FN;
-//        this.LN = LN;
-//    }
-
-    Student(String FN, String LN, int Sid) {
+    Student(String FN, String LN){
         this.FN = FN;
         this.LN = LN;
+    }
+
+    Student(String FN, String LN, int Sid) {
+//        this.FN = FN;
+//        this.LN = LN;
+        this(FN,LN);//  Uses the constructor above using Constructor chaining.
         this.Sid = Sid;
     }
 
     Student(String FN,  int Sid, String LN) {
         this.FN = FN;
         this.LN = LN;
+
         this.Sid = Sid;
     }
 
-    Student(String FN, String LN){
-        this.FN = FN;
-        this.LN = LN;
-    }
+
 
 // You can create overloaded constructors by varying 1) the parameter number, 2) order
 
