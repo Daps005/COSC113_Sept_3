@@ -1,5 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+// https://github.com/Daps005/COSC113_Sept_3.git
 public class Student {
     // Attributes
     String FN;
