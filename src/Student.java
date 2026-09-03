@@ -15,15 +15,39 @@ public class Student {
 
     }
 
+//    Student(String FN, String LN){
+//        this.FN = FN;
+//        this.LN = LN;
+//    }
+
     Student(String FN, String LN, int Sid) {
         this.FN = FN;
         this.LN = LN;
         this.Sid = Sid;
     }
 
+    Student(String FN,  int Sid, String LN) {
+        this.FN = FN;
+        this.LN = LN;
+        this.Sid = Sid;
+    }
 
+    Student(String FN, String LN){
+        this.FN = FN;
+        this.LN = LN;
+    }
+
+// You can create overloaded constructors by varying 1) the parameter number, 2) order
 
     public static void main(String[] args) {
+        Student s4 = new Student("Helena", "Payton");
+        System.out.println(s4.FN);
+        System.out.println(s4.LN);
+        System.out.println(s4.Sid);
+        System.out.println("---------------------");
+
+
+
 
         // Variable s1 is of Student type
         Student s1;
@@ -43,6 +67,10 @@ public class Student {
         s3 = new Student (FN, LN,Sid);
         System.out.println(s3.FN);
         System.out.println(s3.LN);
+
+        Student s5;
+        s5 = new Student(FN,Sid, LN);
+
 
 
     }
